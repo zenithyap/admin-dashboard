@@ -4,6 +4,34 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+}
+
 .sidebar {
-    
+    grid-row: 1 / span 2;
+}
+
+.header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content .projects {
+    grid-row: 1 / span 2;
+}
+
+.content .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
