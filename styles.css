@@ -50,6 +50,7 @@ a:link {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 24px var(--pad);
 }
 
 .content {
@@ -65,4 +66,38 @@ a:link {
 .content .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.searchbar-container {
+    display: flex;
+    width: 60%;
+    gap: 24px;
+    padding-right: var(--pad);
+}
+
+.row:nth-child(1) button {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+}
+
+.searchbar-container #searchbar {
+    background-color: #D3D3D3;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 18px;
+    padding: 6px;
+}
+
+.user-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.user-links img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
