@@ -122,9 +122,11 @@ a:link {
 }
 
 .content .projects {
-    display: grid;
-    gap: 12px;
     grid-row: 1 / span 2;
+}
+
+.projects > h3 {
+    margin-bottom: 12px;
 }
 
 .content .card-container {
@@ -153,4 +155,21 @@ a:link {
     border: none;
     background-color: white;
     font-size: 18px;
+}
+
+.announcement-container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    display: grid;
+}
+
+.announcements > h3 {
+    margin-bottom: 12px;
+}
+
+.announcement-container .announcement:not(:last-child) {
+    border-bottom: 2px solid var(--grey-bg);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
