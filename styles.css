@@ -1,5 +1,6 @@
 :root {
     --blue-bg: #0E86D4;
+    --grey-bg: #e9e9e9;
     --pad: 48px;
 }
 
@@ -53,21 +54,6 @@ a:link {
     padding: 24px var(--pad);
 }
 
-.content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.content .projects {
-    grid-row: 1 / span 2;
-}
-
-.content .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-
 .searchbar-container {
     display: flex;
     width: 60%;
@@ -82,7 +68,7 @@ a:link {
 }
 
 .searchbar-container #searchbar {
-    background-color: #D3D3D3;
+    background-color: var(--grey-bg);
     border: none;
     border-radius: 20px;
     width: 100%;
@@ -124,4 +110,47 @@ a:link {
     border-radius: 24px;
     font-size: 12px;
     color: white;
+}
+
+.content {
+    background-color: var(--grey-bg);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    padding: var(--pad);
+}
+
+.content .projects {
+    display: grid;
+    gap: 12px;
+    grid-row: 1 / span 2;
+}
+
+.content .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 24px;
+    border-radius: 10px;
+    border-left: 10px solid #ADD8E6;
+    background-color: white;
+}
+
+.card .links {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    align-self: end;
+}
+
+.card button {
+    border: none;
+    background-color: white;
+    font-size: 18px;
 }
