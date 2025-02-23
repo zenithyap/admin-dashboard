@@ -33,15 +33,10 @@ body {
     margin-bottom: 48px;
 }
 
-.sidebar .icon-container {
-    display: flex;
-    gap: 12px;
-}
-
 ul {
     list-style-type: none;
     display: grid;
-    gap: 12px;
+    gap: 18px 0px;
     grid-template-columns: 1fr 10fr;
     grid-template-rows: repeat(5, 1fr) 3fr repeat(3, 1fr);
 }
